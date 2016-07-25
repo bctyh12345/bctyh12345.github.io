@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Hexo</title>
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--在这里倒入jquery 方便处理部分页面的jquery-->
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	
+  <header class="site-header site-color" id="site-header-id">
+
+  <div class="container">
+      <h1><a href="/" title="Hexo"><span class="octicon octicon-mark-github"></span> Hexo</a></h1>
+      <nav class="site-header-nav" role="navigation">
+        
+              
+              <a href="/"  class=" site-header-nav-item hvr-underline-from-center" title="Home">Home</a>
+        
+              
+              <a href="/subentry/Life/" target="target" class=" site-header-nav-item hvr-underline-from-center" title="Life">Life</a>
+        
+              
+              <a href="/open-source/"  class=" site-header-nav-item hvr-underline-from-center" title="Open-Source">Open-Source</a>
+        
+              
+              <a href="/blog/"  class=" site-header-nav-item hvr-underline-from-center" title="Blog">Blog</a>
+        
+              
+              <a href="/guestbook/"  class=" site-header-nav-item hvr-underline-from-center" title="Guestbook">Guestbook</a>
+        
+      </nav>
+  </div>
+</header>
+
+	
+    <section class="collection-head collection-head-scrolled geopattern" data-pattern-id="python学习笔记（一）" >
+
+    <div class="container">
+        <div class="collection-title">
+            <h1 class="collection-header">python学习笔记（一）</h1>
+            <div class="collection-info">
+                <span class="meta-info">
+                    
+                        <span class="octicon octicon-calendar"></span>
+                        <time datetime="2015-10-03T15:51:13.000Z" itemprop="datePublished">2015-10-03</time>
+                    
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+	
+
+    <section class="container content">
+
+    <div class="columns">
+        <div class="column three-fourths" >
+            <article class="article-content article-entry">
+                <p>list是一种有序的集合类，类似与java中的List集合，但是功能更强大</p>
+<pre><code>names=[<span class="string">'liudengchao'</span>,<span class="string">'weiqi'</span>,<span class="string">'songzhenwei'</span>]
+#最后添加
+names.<span class="function"><span class="title">append</span><span class="params">(<span class="string">'mengzilun'</span>)</span></span>
+#插入
+names.<span class="function"><span class="title">insert</span><span class="params">(<span class="number">1</span>,<span class="string">'fanghong'</span>)</span></span>
+
+#删除
+names.<span class="function"><span class="title">pop</span><span class="params">(<span class="number">0</span>)</span></span>
+#计数
+a=<span class="function"><span class="title">len</span><span class="params">(names)</span></span>
+
+<span class="function"><span class="title">print</span><span class="params">(a,<span class="string">'\n'</span>,names)</span></span>
+</code></pre><p></p><h4>条件判断<p></p>
+<pre><code><span class="tag">b</span> = <span class="function"><span class="title">input</span><span class="params">(<span class="string">'you age:'</span>)</span></span>
+birth = <span class="function"><span class="title">int</span><span class="params">(b)</span></span>
+<span class="keyword">if</span> birth&gt;=<span class="number">18</span>:
+    <span class="function"><span class="title">print</span><span class="params">(<span class="string">'u are adult'</span>)</span></span>
+elif birth&gt;=<span class="number">6</span>:
+    <span class="function"><span class="title">print</span><span class="params">(<span class="string">'u are teenger'</span>)</span></span>
+<span class="keyword">else</span>:
+    <span class="function"><span class="title">print</span><span class="params">(<span class="string">'u are kid'</span>)</span></span>
+</code></pre><p></p><h4>循环<p></p>
+<pre><code><span class="keyword">words</span>= [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>]
+<span class="keyword">for</span> <span class="built_in">word</span> <span class="operator">in</span> <span class="keyword">words</span>:
+print(<span class="built_in">word</span>)
+</code></pre><p></p><h4>内置字典dict</h4><br>内置字典dictionary，其他语言称之为map，也就是俗称的键值对。<br>    d = {‘a’:1,’b’:2,’c’:3}<p></p>
+<pre><code><span class="keyword">print</span>(<span class="keyword">d</span>['a'])
+#判断<span class="keyword">d</span>是不是在字典里面
+<span class="keyword">print</span>('<span class="keyword">d</span>' <span class="keyword">in</span> <span class="keyword">d</span>)
+
+<span class="keyword">print</span>(<span class="keyword">d</span>.<span class="literal">get</span>('b'))
+<span class="keyword">d</span>.pop('a')
+<span class="keyword">print</span>(<span class="keyword">d</span>)
+# dic 的key是不可变的
+</code></pre><h4 id="set">set</h4><p>set和dic类似，但是不存value<br></p>
+<pre><code>#重复数据自动忽略
+s= <span class="function"><span class="title">set</span><span class="params">([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span></span>
+s.<span class="function"><span class="title">add</span><span class="params">(<span class="number">7</span>)</span></span>
+<span class="function"><span class="title">print</span><span class="params">(s)</span></span>
+s.<span class="function"><span class="title">remove</span><span class="params">(<span class="number">1</span>)</span></span>
+<span class="function"><span class="title">print</span><span class="params">(s)</span></span>
+</code></pre><h4 id="定义函数">定义函数</h4><pre><code><span class="keyword">import</span> math
+
+<span class="function"><span class="keyword">def</span> <span class="title">quadratic</span><span class="params">(a,b,c)</span>:</span>
+    x=(-b+math.sqrt(b*b-<span class="number">4</span>*a*c))/(<span class="number">2</span>*a)
+    y=(-b-math.sqrt(b*b-<span class="number">4</span>*a*c))/(<span class="number">2</span>*a)
+    <span class="keyword">return</span> x,y
+print(quadratic(<span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>)) <span class="comment"># =&gt; (-0.5, -1.0)</span>
+print(quadratic(<span class="number">1</span>, <span class="number">3</span>, -<span class="number">4</span>)) <span class="comment"># =&gt; (1.0, -4.0)</span>
+</code></pre></h4></h4>
+            </article>
+            
+                <div class="share">
+                    <!--开启分享-->
+<div class="share-component"></div>
+
+<script src="/js/share.min.js" type="text/javascript"></script>
+                </div>    
+            
+            
+                <div class="comment">
+                    
+<div class="ds-thread" data-thread-key="undefined" data-title="python学习笔记（一）" data-url="http://yoursite.com/ready_post/python学习笔记.html"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yumemor"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+                </div>
+            
+        </div>
+        <div class="column one-fourth">
+            
+                <h3>Post Directory</h3>
+
+<div id="post-directory-module">
+	<section class="post-directory">
+		<p><strong class="toc-title">文章目录</strong></p>
+		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-text">条件判断
+b = input('you age:')
+birth = int(b)
+if birth>=18:
+    print('u are adult')
+elif birth>=6:
+    print('u are teenger')
+else:
+    print('u are kid')
+循环
+words= ['a','b','c']
+for word in words:
+print(word)
+内置字典dict内置字典dictionary，其他语言称之为map，也就是俗称的键值对。    d = {‘a’:1,’b’:2,’c’:3}
+print(d['a'])
+#判断d是不是在字典里面
+print('d' in d)
+
+print(d.get('b'))
+d.pop('a')
+print(d)
+# dic 的key是不可变的
+setset和dic类似，但是不存value
+#重复数据自动忽略
+s= set([1,1,1,2,3])
+s.add(7)
+print(s)
+s.remove(1)
+print(s)
+定义函数import math
+
+def quadratic(a,b,c):
+    x=(-b+math.sqrt(b*b-4*a*c))/(2*a)
+    y=(-b-math.sqrt(b*b-4*a*c))/(2*a)
+    return x,y
+print(quadratic(2, 3, 1)) # => (-0.5, -1.0)
+print(quadratic(1, 3, -4)) # => (1.0, -4.0)
+</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-text">循环
+words= ['a','b','c']
+for word in words:
+print(word)
+内置字典dict内置字典dictionary，其他语言称之为map，也就是俗称的键值对。    d = {‘a’:1,’b’:2,’c’:3}
+print(d['a'])
+#判断d是不是在字典里面
+print('d' in d)
+
+print(d.get('b'))
+d.pop('a')
+print(d)
+# dic 的key是不可变的
+setset和dic类似，但是不存value
+#重复数据自动忽略
+s= set([1,1,1,2,3])
+s.add(7)
+print(s)
+s.remove(1)
+print(s)
+定义函数import math
+
+def quadratic(a,b,c):
+    x=(-b+math.sqrt(b*b-4*a*c))/(2*a)
+    y=(-b-math.sqrt(b*b-4*a*c))/(2*a)
+    return x,y
+print(quadratic(2, 3, 1)) # => (-0.5, -1.0)
+print(quadratic(1, 3, -4)) # => (1.0, -4.0)
+</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-text">内置字典dict</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#set"><span class="toc-text">set</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定义函数"><span class="toc-text">定义函数</span></a></li></ol>
+	</section>
+</div>
+            
+        </div>
+       
+    </div>
+</section>
+
+<footer class="container">
+    <div class="site-footer" role="contentinfo">
+        <div class="copyright left mobile-block">
+                © 2016
+                <span title="yumemor">yumemor</span>
+                <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+        </div>
+
+        <ul class="site-footer-links right mobile-hidden">
+            <li>
+                <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+            </li>
+        </ul>
+
+        <a href="https://github.com/yumemor/yumemor.github.io" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <ul class="site-footer-links mobile-hidden">
+            
+             
+              
+              <li>
+                <a href="/"  title="Home">Home</a>
+              </li>
+            
+              
+              <li>
+                <a href="/subentry/Life/" target="target" title="Life">Life</a>
+              </li>
+            
+              
+              <li>
+                <a href="/open-source/"  title="Open-Source">Open-Source</a>
+              </li>
+            
+              
+              <li>
+                <a href="/blog/"  title="Blog">Blog</a>
+              </li>
+            
+              
+              <li>
+                <a href="/guestbook/"  title="Guestbook">Guestbook</a>
+              </li>
+            
+
+        </ul>
+
+    </div>
+</footer>
+
+		
+		<script src="/js/typer.js" type="text/javascript"></script>
+
+		<script src="/js/geopattern.js" type="text/javascript"></script>
+
+		<script src="/js/index.js" type="text/javascript"></script>
+
+		 <script src="/js/popular_repo.js" type="text/javascript"></script> 
+
+	</body>
+</html>

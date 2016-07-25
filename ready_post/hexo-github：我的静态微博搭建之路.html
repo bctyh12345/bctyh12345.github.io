@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Hexo</title>
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--在这里倒入jquery 方便处理部分页面的jquery-->
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	
+  <header class="site-header site-color" id="site-header-id">
+
+  <div class="container">
+      <h1><a href="/" title="Hexo"><span class="octicon octicon-mark-github"></span> Hexo</a></h1>
+      <nav class="site-header-nav" role="navigation">
+        
+              
+              <a href="/"  class=" site-header-nav-item hvr-underline-from-center" title="Home">Home</a>
+        
+              
+              <a href="/subentry/Life/" target="target" class=" site-header-nav-item hvr-underline-from-center" title="Life">Life</a>
+        
+              
+              <a href="/open-source/"  class=" site-header-nav-item hvr-underline-from-center" title="Open-Source">Open-Source</a>
+        
+              
+              <a href="/blog/"  class=" site-header-nav-item hvr-underline-from-center" title="Blog">Blog</a>
+        
+              
+              <a href="/guestbook/"  class=" site-header-nav-item hvr-underline-from-center" title="Guestbook">Guestbook</a>
+        
+      </nav>
+  </div>
+</header>
+
+	
+    <section class="collection-head collection-head-scrolled geopattern" data-pattern-id="hexo+github：我的静态微博搭建之路" >
+
+    <div class="container">
+        <div class="collection-title">
+            <h1 class="collection-header">hexo+github：我的静态微博搭建之路</h1>
+            <div class="collection-info">
+                <span class="meta-info">
+                    
+                        <span class="octicon octicon-calendar"></span>
+                        <time datetime="2015-10-04T12:08:34.000Z" itemprop="datePublished">2015-10-04</time>
+                    
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+	
+
+    <section class="container content">
+
+    <div class="columns">
+        <div class="column three-fourths" >
+            <article class="article-content article-entry">
+                <p><img src="/image/github.jpg" alt=""></p>
+<h3 id="写在前面的话">写在前面的话</h3><p>关于hexo+github建站其实已经有蛮多人给出非常完备的教程，我也是其中的受益者，但是其中还是小细节值得注意的，所以想整理出一篇更具有普适性，更易懂的搭建方法，前人搭桥，后人过河，相信跟着一步一步来的话，搭建成功还是没问题的。<br><br>ps：本文中引用了很多其他博文中的优秀内容，博文最后会列出参考资料</p>
+<p>ps2:内容有点长，请耐心观看<br><br>ps3:点击more正式开始<br><a id="more"></a></p>
+<h2 id="知识准备篇">知识准备篇</h2><blockquote>
+<p>以下内容出自<a href="http://blog.csdn.net/poem_of_sunshine/article/details/29369785/" target="_blank" rel="external">《如何搭建一个独立博客——简明Github Pages与Hexo教程》</a> </p>
+</blockquote>
+<p>PS:不感兴趣的可以跳过这部分~~</p>
+<hr>
+<p><br><br><b>为什么要搭建一个独立博客？</b><br><br>答：独自更自由。<br><br><br><b>为什么选择GitHub Pages？</b><br><br><br>很多人用wordpress，你为什么要用github pages来搭建？<br><br>•1、github pages有300M免费空间，资料自己管理，保存可靠；<br><br>•2、学着用github，享受github的便利，上面有很多大牛，眼界会开阔很多；<br><br>•3、顺便看看github工作原理，最好的团队协作流程；<br><br>•4、github是趋势；<br><br>•5、你不觉得用github很geek吗？；<br><br>•6、就算github被墙了，可以搬到国内的gitcafe中去。<br><br><b>GitHub Pages是什么？<br></b></p>
+<p>GitHub Pages本用于介绍托管在GitHub的项目， 不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。</p>
+<p>github Pages可以被认为是用户编写的、托管在github上的静态网页。</p>
+<h2 id="工具篇">工具篇</h2>
+            </article>
+            
+                <div class="share">
+                    <!--开启分享-->
+<div class="share-component"></div>
+
+<script src="/js/share.min.js" type="text/javascript"></script>
+                </div>    
+            
+            
+                <div class="comment">
+                    
+<div class="ds-thread" data-thread-key="undefined" data-title="hexo+github：我的静态微博搭建之路" data-url="http://yoursite.com/ready_post/hexo-github：我的静态微博搭建之路.html"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yumemor"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+                </div>
+            
+        </div>
+        <div class="column one-fourth">
+            
+                <h3>Post Directory</h3>
+
+<div id="post-directory-module">
+	<section class="post-directory">
+		<p><strong class="toc-title">文章目录</strong></p>
+		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#写在前面的话"><span class="toc-text">写在前面的话</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#知识准备篇"><span class="toc-text">知识准备篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具篇"><span class="toc-text">工具篇</span></a>
+	</section>
+</div>
+            
+        </div>
+       
+    </div>
+</section>
+
+<footer class="container">
+    <div class="site-footer" role="contentinfo">
+        <div class="copyright left mobile-block">
+                © 2016
+                <span title="yumemor">yumemor</span>
+                <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+        </div>
+
+        <ul class="site-footer-links right mobile-hidden">
+            <li>
+                <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+            </li>
+        </ul>
+
+        <a href="https://github.com/yumemor/yumemor.github.io" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <ul class="site-footer-links mobile-hidden">
+            
+             
+              
+              <li>
+                <a href="/"  title="Home">Home</a>
+              </li>
+            
+              
+              <li>
+                <a href="/subentry/Life/" target="target" title="Life">Life</a>
+              </li>
+            
+              
+              <li>
+                <a href="/open-source/"  title="Open-Source">Open-Source</a>
+              </li>
+            
+              
+              <li>
+                <a href="/blog/"  title="Blog">Blog</a>
+              </li>
+            
+              
+              <li>
+                <a href="/guestbook/"  title="Guestbook">Guestbook</a>
+              </li>
+            
+
+        </ul>
+
+    </div>
+</footer>
+
+		
+		<script src="/js/typer.js" type="text/javascript"></script>
+
+		<script src="/js/geopattern.js" type="text/javascript"></script>
+
+		<script src="/js/index.js" type="text/javascript"></script>
+
+		 <script src="/js/popular_repo.js" type="text/javascript"></script> 
+
+	</body>
+</html>
